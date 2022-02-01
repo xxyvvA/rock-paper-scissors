@@ -1,0 +1,23 @@
+.container {
+  @apply w-full border-2 border-solid border-scoreNum rounded-[5px] pl-[23px] pr-[12px] py-[12px] flex justify-between items-center mb-[105px];
+
+  .title {
+    @apply text-[21px] text-white leading-4 w-[83px];
+  }
+
+  .scores {
+    @apply flex justify-between items-center gap-2;
+
+    .scoreContainer {
+      @apply py-[10px] px-[22px] bg-white h-full flex flex-col justify-between items-center rounded;
+
+      .whoseScore {
+        @apply leading-none font-semibold text-[10px] text-score;
+      }
+
+      .score {
+        @apply leading-[40px] text-[40px] text-scoreNum;
+      }
+    }
+  }
+}

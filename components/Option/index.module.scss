@@ -1,0 +1,21 @@
+.container {
+  @apply relative w-[129.37px] h-[132.66px] rounded-full flex justify-center overflow-visible;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+
+  .background {
+    @apply w-full h-[126.78px] rounded-full;
+  }
+
+  .iconsh {
+    @apply absolute w-[99.31px] h-[99.33px] self-center bg-iconSh rounded-full flex justify-center items-center;
+
+    .iconbg {
+      @apply w-full h-[94.1px] rounded-full self-end;
+      background: linear-gradient(0deg, #f3f3f3 0%, #dadada 98.34%);
+    }
+
+    img {
+      @apply absolute;
+    }
+  }
+}

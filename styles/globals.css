@@ -5,8 +5,22 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: Barlow Semi Condensed;
+  font-weight: bold;
+}
+
+html,
+body {
+  height: 100%;
 }
 
 body {
-  background-color: #1f3757;
+  background: radial-gradient(134.34% 134.34% at 50% 0%, #1f3757 0%, #131537 100%);
+}
+
+body > div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 32px 32px 56px 32px;
 }

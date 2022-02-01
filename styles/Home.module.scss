@@ -1,0 +1,43 @@
+.playArea {
+  @apply w-full relative flex flex-col items-center justify-center gap-[15.68px];
+
+  .bgtriangle {
+    @apply absolute;
+  }
+
+  .triangle {
+    @apply flex justify-between self-stretch;
+  }
+}
+
+.outcome {
+  @apply w-full flex justify-between;
+
+  .pick {
+    @apply flex flex-col items-center justify-between gap-[17px];
+
+    .housePick {
+      @apply w-[110px] h-[110px] mt-[11.32px] bg-selector rounded-full opacity-[10%];
+    }
+
+    .name {
+      @apply text-[13px] text-white leading-[32px] tracking-[1.88px] mr-[-1.88px];
+    }
+  }
+}
+
+.result {
+  @apply w-full flex flex-col justify-center items-center mt-[62px];
+
+  .words {
+    @apply text-[56px] text-white;
+  }
+
+  .reset {
+    @apply leading-[18px] text-base font-semibold tracking-[2.3px] bg-white text-icon px-[60px] py-[15px] rounded-lg;
+  }
+}
+
+.rulesButton {
+  @apply mt-[auto] self-center text-base font-semibold active:bg-white active:text-icon tracking-[2.5px] text-white px-[36px] py-[11px] border-[1.5px] border-solid border-white rounded-lg;
+}
