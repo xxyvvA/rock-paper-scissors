@@ -134,6 +134,8 @@ const Home: NextPage = () => {
         </div>
       ) : null}
 
+      <div className={rules ? styles.shadow : ""}></div>
+
       <Rules open={rules} setRules={setRules} />
 
       <button

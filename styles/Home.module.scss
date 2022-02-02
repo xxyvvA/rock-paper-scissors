@@ -2,11 +2,11 @@
   @apply w-full relative flex flex-col items-center justify-center gap-[15.68px];
 
   .bgtriangle {
-    @apply absolute;
+    @apply absolute md:w-[254px] md:h-[287px];
   }
 
   .triangle {
-    @apply flex justify-between self-stretch;
+    @apply flex justify-between md:justify-center md:gap-[80px] self-stretch;
   }
 }
 
@@ -38,6 +38,10 @@
   }
 }
 
+.shadow {
+  @apply absolute w-0 bg-selector opacity-[0.5] top-0 left-0 md:w-full md:h-full;
+}
+
 .rulesButton {
-  @apply mt-[auto] self-center text-base font-semibold active:bg-white active:text-icon tracking-[2.5px] text-white px-[36px] py-[11px] border-[1.5px] border-solid border-white rounded-lg;
+  @apply mt-[auto] md:absolute md:z-[100000] md:bottom-[32px] md:right-[32px] md:mt-0 self-center text-base font-semibold active:bg-white active:text-icon tracking-[2.5px] text-white px-[36px] py-[11px] border-[1.5px] border-solid border-white rounded-lg;
 }

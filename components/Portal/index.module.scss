@@ -1,7 +1,15 @@
 .container {
-  @apply absolute top-0 bg-white h-full w-full px-[35px] pt-[95px] pb-[65.91px] flex flex-col items-center justify-between;
+  @apply absolute top-0 md:top-[117px] md:left-[758.5px] bg-white h-full w-full md:rounded-[8px] md:w-[auto] md:h-[auto] px-[35px] pt-[95px] pb-[65.91px] md:p-[32px] flex flex-col items-center md:items-start justify-between;
 
   .rulesHeader {
-    @apply text-[32px] text-icon;
+    @apply text-[32px] md:leading-[32px] text-icon md:mb-[48px];
+  }
+
+  .graphic {
+    @apply md:mx-[17px];
+  }
+
+  button .close {
+    @apply relative md:absolute md:top-[38px] md:right-[32px] z-[100001];
   }
 }
