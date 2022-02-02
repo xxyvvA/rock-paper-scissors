@@ -5,8 +5,24 @@
     @apply absolute md:w-[254px] md:h-[287px];
   }
 
+  .bgpentagon {
+    @apply absolute md:w-[345px] md:h-[345px];
+  }
+
   .triangle {
     @apply flex justify-between md:justify-center md:gap-[80px] self-stretch;
+  }
+
+  .pentagonZero {
+    @apply relative top-[15px] md:top-[20px];
+  }
+
+  .pentagonOne {
+    @apply w-full flex justify-between md:justify-center  md:gap-[182px] md:mb-[30px];
+  }
+
+  .pentagonTwo {
+    @apply w-full flex justify-center gap-[33px] md:gap-[52px];
   }
 }
 
@@ -34,7 +50,7 @@
   }
 
   .reset {
-    @apply leading-[18px] text-base font-semibold tracking-[2.3px] bg-white text-icon px-[60px] py-[15px] rounded-lg;
+    @apply leading-[18px] text-base hover:text-playHover font-semibold tracking-[2.3px] bg-white text-icon px-[60px] py-[15px] rounded-lg;
   }
 }
 

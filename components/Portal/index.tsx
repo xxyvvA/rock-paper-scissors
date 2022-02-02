@@ -5,9 +5,10 @@ import styles from "./index.module.scss";
 interface ModalProps {
   open: boolean;
   setRules: Dispatch<SetStateAction<boolean>>;
+  rulesImg: string;
 }
 
-const Rules: FC<ModalProps> = ({ open, setRules }) => {
+const Rules: FC<ModalProps> = ({ open, setRules, rulesImg }) => {
   let ref = useRef<HTMLElement | null>(null);
   const [mounted, setMounted] = useState<boolean>(false);
 
@@ -20,7 +21,7 @@ const Rules: FC<ModalProps> = ({ open, setRules }) => {
     ? createPortal(
         <div className={styles.container}>
           <p className={styles.rulesHeader}>RULES</p>
-          <img className={styles.graphic} src="/img/rules.svg" />
+          <img className={styles.graphic} src={rulesImg} />
           <button onClick={() => setRules(false)}>
             <svg className={styles.close} width="19.09" height="19.09">
               <path stroke="#979797" strokeWidth="3" d="M2.12,2.12 L16.97,16.97" />

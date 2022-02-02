@@ -19,3 +19,23 @@
     }
   }
 }
+
+.container.small {
+  @apply w-[96px] h-[97px] md:w-[145px] md:h-[148px];
+
+  .background.small {
+    @apply w-full h-[92.7px] md:h-[141.44px];
+  }
+
+  .iconsh.small {
+    @apply w-[74px] h-[73px] md:w-[112px] md:h-[111px];
+
+    .iconbg.small {
+      @apply w-full h-[68.81px] md:h-[105px];
+    }
+
+    img {
+      @apply w-[47px] h-[46px] md:w-[70px] md:h-[70px];
+    }
+  }
+}
